@@ -23,7 +23,7 @@ export default function About() {
                 />
             </div>
             <div>
-                <p className='about-description'>Hi, I'm Chase Arcos Hermosisima. I'm a software engineer with a passion for programming and technology. I am a person who loves solving problems and creating solutions to a business. My goal is to continue learning and improving my skills in various programming languages and frameworks.</p>
+                <p className='about-description'>Hi, I&lsquom Chase Arcos Hermosisima. I&lsquom a software engineer with a passion for programming and technology. I am a person who loves solving problems and creating solutions to a business. My goal is to continue learning and improving my skills in various programming languages and frameworks.</p>
             </div>
 
             <Summary/>
