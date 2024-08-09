@@ -1,0 +1,32 @@
+.modal-container-active::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .8;
+}
+.confirm-modal {
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    height: 150px;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.btn-confirm {
+    color: black;
+    margin-left: 5px;
+}
+.btn-confirm:hover {
+    font-weight: bold;
+    margin-left: 0px;
+}

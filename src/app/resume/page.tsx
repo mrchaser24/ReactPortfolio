@@ -1,0 +1,7 @@
+export default function Resume() {
+    return (
+        <main className="flex flex-col items-center h-full pt-20">
+            <div className='pb-10 text-2xl'>RESUME</div>
+        </main>
+    );
+}

@@ -1,0 +1,20 @@
+.about-photo {
+    border-radius: 50%;
+    border: 5px black;
+    border-style: dashed solid solid dashed;
+}
+.about-description {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Summary */
+.about-container {
+    border: 5px black;
+    border-style: dashed solid solid dashed;
+}
+
+.list {
+    width: 300px;
+}

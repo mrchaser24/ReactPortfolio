@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contact-btn {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+
+
+/* Custom CSS for Header */
+.btn-navs {
+    padding: 5px 15px;
+    margin: 0px 5px;
+    position: relative;
+}
+.btn-navs::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+    background-color: black !important;
+    transition: .3s ease-in-out;
+}
+.btn-navs:hover::before {
+    width: 100%;
+    left: 0px;
+    transition: .3s ease-in-out;
+}
+
+.selected-page:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    bottom: 3px;
+    background-color: black !important;
+}

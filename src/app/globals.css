@@ -16,18 +16,57 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.content {
+  width: 90%;
+  margin: auto;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* BLINKING CURSOR */
+.cursor {
+  content: '';
+  width: 2px;
+  height: 100%;
+  margin-left: 5px;
+  visibility: visible;
+  background-color: black;
+  animation: blink 1.08s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  from { visibility: visible; }
+  to { visibility: hidden; }
+}
+
+/* BUTTON */
+.btn-primary {
+  color: black;
+  margin-left: 5px;
+}
+.btn-primary:hover {
+  font-weight: bold;
+  margin-left: 0px;
+}
+
+/* HOME */
+.project-link {
+  margin: 20px 0 0;
+  padding: 5px 10px;
+  border: 2px solid black;
+  width: fit-content;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s ease-out;
+}
+
+.project-link:hover {
+  background-color: black;
+  color: white;
 }
